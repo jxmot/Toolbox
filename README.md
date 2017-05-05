@@ -16,11 +16,15 @@ Unless something specific needs to be noted I will not be providing any installa
   * [Node](#node)
   * [MySQL](#mysql)
   * [MongoDB](#mongodb)
-* [Editing Tools](#editing-tools)
+
++ [Editing Tools](#editing-tools)
   * [File Grep and File Search](#file-grep-and-file-search-tools)
+
 * [Version Control](#version-control)
+
 * [IDE Tools](#ide-tools)
-* [Other Useful Tools](#other-useful-tools)
+
++ [Other Useful Tools](#other-useful-tools)
   * [API Tester](#api-tester)
   * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
   * [Image Editors](#image-editors)
