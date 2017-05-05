@@ -12,7 +12,7 @@ Unless something specific needs to be noted I will not be providing any installa
 
 # Table of Contents
 
-* [My Development Platform](#my-development-platform)
++ [My Development Platform](#my-development-platform)
   * [Node](#node)
   * [MySQL](#mysql)
   * [MongoDB](#mongodb)
