@@ -12,27 +12,23 @@ Unless something specific needs to be noted I will not be providing any installa
 
 # Table of Contents
 
-+ [My Development Platform](#my-development-platform)
+* [My Development Platform](#my-development-platform)
     * [Node](#node)
     * [MySQL](#mysql)
     * [MongoDB](#mongodb)
-
-+ [Editing Tools](#editing-tools)
+* [Editing Tools](#editing-tools)
     * [File Grep and File Search](#file-grep-and-file-search-tools)
-
 * [Version Control](#version-control)
-
 * [IDE Tools](#ide-tools)
-
-+ [Other Useful Tools](#other-useful-tools)
-  * [API Tester](#api-tester)
-  * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
-  * [Image Editors](#image-editors)
-  * [File Merge and Difference](#File-merge-and-difference)
-  * [Virtual Machine](#virtual-machine)
-  * [Terminal Emulators](#terminal-emulators)
-  * [HTTP Servers](#http-servers)
-  * [Database Managers](#database-managers)
+* [Other Useful Tools](#other-useful-tools)
+    * [API Tester](#api-tester)
+    * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
+    * [Image Editors](#image-editors)
+    * [File Merge and Difference](#File-merge-and-difference)
+    * [Virtual Machine](#virtual-machine)
+    * [Terminal Emulators](#terminal-emulators)
+    * [HTTP Servers](#http-servers)
+    * [Database Managers](#database-managers)
 
 # My Development Platform
 
@@ -40,11 +36,11 @@ I'm a *Windows* guy, never used an *Apple* and probably never will. If you (*the
 
 Windows Details :
 * Windows 10
-  * Home and Pro Editions
-  * 64 bit
+    * Home and Pro Editions
+    * 64 bit
 * Windows 7
-  * Professional
-  * 64 bit
+    * Professional
+    * 64 bit
 
 ## Node
 
@@ -70,11 +66,11 @@ I like this database for a few reasons -
 This is my **primary** editor, and I've been using it for quite a number of years. It has a lot of features and I use most of them on a regular basis. I've tried other editors but found them to be lacking in regards to the features I use. For example in Notepad++ I use :
 
 * Column cut/copy and past - Until you use this feature you won't know what your missing. By holding `ALT` plus `SHIFT` and moving with the arrow keys you can do things like -
-  * Insert on all lines selected, this includes tabs and spaces.
-  * Replace or delete.
+    * Insert on all lines selected, this includes tabs and spaces.
+    * Replace or delete.
 * Macro recording - Another very useful feature! You can *record* keystrokes and play them back. This is very useful when you want to repeat a series of editing steps.
 * **Notes for Windows Users:** 
-  * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator*.
+    * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator*.
 
 **Markdown Edit** : <http://markdownedit.com/>
 
