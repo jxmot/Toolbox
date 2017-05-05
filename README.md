@@ -17,14 +17,14 @@ Unless something specific needs to be noted I will not be providing any installa
     * [MySQL](#mysql)
     * [MongoDB](#mongodb)
 * [Editing Tools](#editing-tools)
-    * [File Grep and File Search](#file-grep-and-file-search-tools)
+* [File Grep and File Search](#file-grep-and-file-search-tools)
+* [File Difference and Merge](#File-difference-and-merge)
 * [Version Control](#version-control)
-* [IDE Tools](#ide-tools)
+* [IDE Software](#ide-software)
 * [Other Useful Tools](#other-useful-tools)
     * [API Tester](#api-tester)
     * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
     * [Image Editors](#image-editors)
-    * [File Merge and Difference](#File-merge-and-difference)
     * [Virtual Machine](#virtual-machine)
     * [Terminal Emulators](#terminal-emulators)
     * [HTTP Servers](#http-servers)
@@ -35,6 +35,7 @@ Unless something specific needs to be noted I will not be providing any installa
 I'm a *Windows* guy, never used an *Apple* and probably never will. If you (*the reader*) are using an *Apple* then a lot of what's in this document may not apply to you. However some of the tools *might* be available for the Apple. Check out the links I've provided and look around.
 
 Windows Details :
+
 * Windows 10
     * Home and Pro Editions
     * 64 bit
@@ -70,7 +71,7 @@ This is my **primary** editor, and I've been using it for quite a number of year
     * Replace or delete.
 * Macro recording - Another very useful feature! You can *record* keystrokes and play them back. This is very useful when you want to repeat a series of editing steps.
 * **Notes for Windows Users:** 
-    * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator*.
+    * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator* when changing the options.
 
 **Markdown Edit** : <http://markdownedit.com/>
 
@@ -81,13 +82,21 @@ A handy program to have for editing *markdown* files. I've tried a number of the
 
 *I used it to create and edit this file.*
 
-## File Grep and File Search
+# File Grep and File Search
 
 **AstroGrep** : <http://astrogrep.sourceforge.net/>
 
-Anyone who has been working in *Linux* (*or Unix for some of us "old timers"*) you have probably use the command-line utility `grep`. It is useful, but a *gui* version is so much better! And that's what this is. It's a GUI grep tool with the ability to tie in to your editor. For example you can configure *AstroGrep* to a file in your editor *on the line* you've double-clicked on in the results pane.
+Anyone who has been working in *Linux* (*or Unix for some of us "old timers"*) you have probably use the command-line utility `grep`. It is useful, but a *gui* version is so much better! And that's what this is. It's a GUI grep tool with the ability to tie in to your editor. For example you can configure *AstroGrep* to open a found file in your editor *on the line* you've double-clicked on in the results pane.
 
 **Windows Search**: Admittedly, definitely **not** the best. But it works. If I find a better file search I'll be sure to note it here.
+
+# File Difference and Merge
+
+**Winmerge** : <http://winmerge.org/>
+
+What's the *difference*? Being able to see the differences between two source files can mean the difference between finding the bug quickly or potentially taking a real long time. 
+
+This application will allow you to edit or copy changes from one file to another. It can also be used to compare the contents of a folder against another. 
 
 # Version Control
 
@@ -127,7 +136,6 @@ This is another one of those multi-use tools. So far I've used it for -
 
 * Typical API development and testing.
 * Analyzing web based hardware (*such as IP cameras*) APIs.
-* 
 
 A very useful feature is the ability to *share* Postman collections. Collections are saved URLs that you can create and add to a named collection. And they can be shared! **<- VERIFY!!!**
 
@@ -147,23 +155,17 @@ Definitely **not** free. But it is an *excellent* diagramming tool with lots of 
 
 An excellent image editing tool, it's my favorite. It supports all common formats and you can work in *layers* which makes compositing very easy.
 
-## File Merge and Difference
-
-**Winmerge** : <http://winmerge.org/>
-
-What's the *difference*? Being able to see the differences between two source files can mean the difference between finding the bug quickly or potentially taking a real long time. 
-
-This application will allow you to edit or copy changes from one file to another. It can also be used to compare the contents of a folder against another. 
-
 ## Virtual Machine
 
 **Oracle VirtualBox** : <https://www.virtualbox.org/>
 
-Ever run into a situation where you needed a *real server* and didn't have the hardware for it? Then a *virtual machine* might be the solution. 
+HAve you ever run into a situation where you needed a *real server* and didn't have the hardware for it, or hosting? Then a *virtual machine* might be the solution. During development on some projects I've found it best to run the code on a VM *first* before deploying to a hosted server.
+
+**<- ADD CONTENT**
 
 ### ISO Installations
 
-A very good source for **free** Linux/Debian images. Most are reconfigure with other free software components and generally do not require much (if any) configuration. I use <https://www.turnkeylinux.org/> for the images that I use.
+A very good source for **free** Linux/Debian images. Most are reconfigure with other free software components and generally do not require much (if any) configuration. I use <https://www.turnkeylinux.org/> for the images that I use. **<-- FIX**
 
 ### Things to Note
 
@@ -171,11 +173,15 @@ Late last year one of the *Windows 10* updates "broke" networking with the virtu
 
 ## Terminal Emulators
 
-**Bitvise** : 
+**Bitvise** : <https://www.bitvise.com/>
+
+
 
 ## HTTP Servers
 
-**MAMP** (**not** Pro) : 
+**MAMP** (**not** Pro) : <https://www.mamp.info/en/>
+
+
 
 ## Database Managers
 
