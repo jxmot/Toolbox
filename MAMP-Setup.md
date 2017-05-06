@@ -17,7 +17,7 @@ Let's say you're working on to separate projects and want to test them locally u
 
 ### MAMP Installation :
 
-If you have MySQL installed prior to this point, or if you are planning on installing it for use without a HTTP server then either MAMP or MySQL will need to have their listening port changed. The default for an SQL server is 3306. And since I always have the MySQL server running I've change the MAMP SQL port to 3307.
+If you have MySQL installed prior to this point, or if you are planning on installing it for use without a HTTP server then either MAMP or MySQL will need to have their listening port changed. The default for an SQL server is 3306. And since I always have the MySQL server running I've changed the MAMP SQL port to 3307.
 
 If you aren't going to use MySQL then you can just install MAMP with it's default settings and skip changing the port number.
 
