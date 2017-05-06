@@ -137,7 +137,7 @@ This is another one of those multi-use tools. So far I've used it for -
 * Typical API development and testing.
 * Analyzing web based hardware (*such as IP cameras*) APIs.
 
-A very useful feature is the ability to *share* Postman collections. Collections are saved URLs that you can create and add to a named collection. And they can be shared! **<- VERIFY!!!**
+A very useful feature is the ability to *share* Postman collections. Collections are saved URLs that you can create and add to a named collection. And they can be shared! You only need to sign-in to Postman. 
 
 ## Wire Frame and Diagram Editors
 
@@ -161,31 +161,54 @@ An excellent image editing tool, it's my favorite. It supports all common format
 
 HAve you ever run into a situation where you needed a *real server* and didn't have the hardware for it, or hosting? Then a *virtual machine* might be the solution. During development on some projects I've found it best to run the code on a VM *first* before deploying to a hosted server.
 
-**<- ADD CONTENT**
-
 ### ISO Installations
 
-A very good source for **free** Linux/Debian images. Most are reconfigure with other free software components and generally do not require much (if any) configuration. I use <https://www.turnkeylinux.org/> for the images that I use. **<-- FIX**
+Installing from an ISO is simple. Especially in Windows 10 Pro because mounting an ISO as a virtual drive can be done by right clicking on the ISO file an clicking "Mount".
 
-### Things to Note
+### ISO Sources
 
-Late last year one of the *Windows 10* updates "broke" networking with the virtual machines. Prior to the breakage my virtual machines were able to make DHCP requests and obtain their IP address from my router. But no more. I've read some complaints about this at that time, however there were no solutions. 
+* Turnkey Linux : <https://www.turnkeylinux.org/>
+
+A very good source for **free** Linux/Debian images. Most are pre-configured with other free software components and generally do not require much (if any) configuration.
+
+* Others : Any of the Linux distro sites will have ISOs for download. 
+
+### 64 vs 32 Bit Guests (*VirtualBox*)
+
+When I was running VirtualBox on Windows 7 Pro / 64 bit I was able to install 64 bit *guests*. However when I switched to Windows 10 Pro / 64 bit that ability *went away*.
+
+There are a couple of reasons why it happened. First, you need to enable the Intel virtualization in your BIOS. And you may (*or may not*) have to install VirtualBox as an *administrator*. I had tried reinstalling VirtualBox before I tried the BIOS change and had no luck. But when I changed my BIOS and then ran VirtualBox the 64 bit guest options reappeared.
+
+Here's a link that found useful in fixing this issue - 
+
+<https://forums.virtualbox.org/viewtopic.php?f=1&t=62339>
+
+### Things to Note (*VirtualBox*)
+
+**Networking :**
+Late last year one of the *Windows 10 Home 64 bit* updates "broke" networking with the virtual machines. Prior to the breakage my virtual machines were able to make DHCP requests and obtain their IP address from my router. But no more. I've read some complaints about this at that time, however there were no solutions. 
+
+However, running on Windows 10 **Pro 64 bit** the problem appears to have been either fixed, or non-existent. I'll have to try my laptop again (*running Win 10 Home 64 bit*) and see if the issue is still there.
+
+In order for the VM to make the DHCP request a VM network setting must be changed. This can be done prior to installing from the ISO. By default the VM network adapter is set to NAT. Change to "Bridged Adapter" and your VM will be able to obtain its IP address.
 
 ## Terminal Emulators
 
 **Bitvise** : <https://www.bitvise.com/>
 
-
+This is a much nicer terminal emulator than PuTTY. In addition to the terminal there's also an SFTP client. And I think it does a much better job of managing the SSH keys than other terminal programs. It allows you to create *profiles* for each server that you connect to. And those profiles can be copied between separate PCs that have Bitvise installed.
 
 ## HTTP Servers
 
 **MAMP** (**not** Pro) : <https://www.mamp.info/en/>
 
-
+If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibilty as you would with a VM. But for a lot of applications *less is better*.
 
 ## Database Managers
 
-Currently I've been developing for **MySQL** and **MongoDB**. Each has it's own manager which is handy. 
+Currently I've been developing for **MySQL** and **MongoDB**. There are managers available for each, which is handy to have around.
+
+When it comes to SQL vs NOSQL each has its advantages. When developing an application that requires a database I make my choice based on *what is best for the application and its end-use*.
 
 ### MySQL Workbench
 
@@ -197,7 +220,7 @@ It can connect to the *local* MySQL installation, and connect to remote ones. Su
 
 ### Robomongo
 
-This app has a similar look and feel to *MySQL Workbench* and pretty much does the same things as MySQL Workbench. 
+This app has a similar look and feel to *MySQL Workbench* and pretty much does the same type things as MySQL Workbench. 
 
 # Tools That I Do Not Use
 
