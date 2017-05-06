@@ -26,9 +26,15 @@ Unless something specific needs to be noted I will not be providing any installa
     * [Wire Frame and Diagram Editors](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-wire-frame-and-diagram-editors)
     * [Image Editors](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-image-editors)
     * [Virtual Machine](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-virtual-machine)
+        * [ISO Installations](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-iso-installations)
+        * [ISO Sources](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-iso-sources)
+        * [64 vs 32 Bit Guests](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-64-vs-32-bit-guests)
+        * [Things to Note](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-things-to-note)
     * [Terminal Emulators](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-terminal-emulators)
     * [HTTP Servers](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-http-servers)
     * [Database Managers](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-database-managers)
+        * [MySQL Workbench](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-mysql-workbench)
+        * [Robomongo](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-robomongo)
 * [Tools That I Do Not Use](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-tools-that-i-do-not-use)
     * [Sublime Editor](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-sublime-editor)
     * [Eclipse](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-eclipse)
@@ -167,6 +173,8 @@ HAve you ever run into a situation where you needed a *real server* and didn't h
 ### ISO Installations
 
 Installing from an ISO is simple. Especially in Windows 10 Pro because mounting an ISO as a virtual drive can be done by right clicking on the ISO file an clicking "Mount".
+
+Then run Virtualbox and as the VM is coming up you will be given a chance to select the mount ISO.
 
 ### ISO Sources
 
