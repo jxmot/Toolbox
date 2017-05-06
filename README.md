@@ -29,6 +29,9 @@ Unless something specific needs to be noted I will not be providing any installa
     * [Terminal Emulators](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-terminal-emulators)
     * [HTTP Servers](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-http-servers)
     * [Database Managers](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-database-managers)
+* [Tools That I Do Not Use](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-tools-that-i-do-not-use)
+    * [Sublime Editor](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-sublime-editor)
+    * [Eclipse](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-eclipse)
 
 # My Development Platform
 
@@ -237,7 +240,5 @@ I first heard about this editor in a class I had taken. It was a good choice for
 ## Eclipse
 
 I'm not a fan of Eclipse. I've tried to use it, and tried. But I find it to be cumbersome in regards to it's installation and use. 
-
-# Bitbucket Markdown Notes
 
 
