@@ -185,7 +185,7 @@ A very good source for **free** Linux/Debian images. Most are pre-configured wit
 
 * Others : Any of the Linux distro sites will have ISOs for download. 
 
-### 64 vs 32 Bit Guests (*VirtualBox*)
+### 64 vs 32 Bit Guests
 
 When I was running VirtualBox on Windows 7 Pro / 64 bit I was able to install 64 bit *guests*. However when I switched to Windows 10 Pro / 64 bit that ability *went away*.
 
@@ -195,7 +195,7 @@ Here's a link that found useful in fixing this issue -
 
 <https://forums.virtualbox.org/viewtopic.php?f=1&t=62339>
 
-### Things to Note (*VirtualBox*)
+### Things to Note
 
 **Networking :**
 Late last year one of the *Windows 10 Home 64 bit* updates "broke" networking with the virtual machines. Prior to the breakage my virtual machines were able to make DHCP requests and obtain their IP address from my router. But no more. I've read some complaints about this at that time, however there were no solutions. 
