@@ -85,6 +85,7 @@ This is my **primary** editor, and I've been using it for quite a number of year
 **Markdown Edit** : <http://markdownedit.com/>
 
 A handy program to have for editing *markdown* files. I've tried a number of them and this one works best for **Git** style markdown files. I also use it for *Bitbucket* markdown, but should be noted that Git and Bitbucket are slightly different in regards to the markdown that's recognized. This editor has the following features that I find to be useful - 
+
 * Side-by-side editing and WYSIWYG - the left side of the program's window is where you do your editing. It *highlights* markdown elements for you and has some "smarts" in regards to bulleted lists as it will create a new bullet on the next line when you hit `Enter` and the new line will be *at the same level* as the previous line.
 * Re-opens last file automatically when started.
 * Installation associates it with `*.md` files.
