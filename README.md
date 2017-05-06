@@ -12,10 +12,10 @@ Unless something specific needs to be noted I will not be providing any installa
 
 # Table of Contents
 
-* [My Development Platform](https://bitbucket.org/jxmot/toolbox/overview#my-development-platform)
-    * [Node](https://bitbucket.org/jxmot/toolbox/overview#node)
-    * [MySQL](https://bitbucket.org/jxmot/toolbox/overview#mysql)
-    * [MongoDB](https://bitbucket.org/jxmot/toolbox/overview#mongodb)
+* [My Development Platform](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-my-development-platform)
+    * [Node](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-node)
+    * [MySQL](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-mysql)
+    * [MongoDB](https://bitbucket.org/jxmot/toolbox/overview#markdown-header-mongodb)
 * [Editing Tools](#editing-tools)
 * [File Grep and File Search](#file-grep-and-file-search-tools)
 * [File Difference and Merge](#File-difference-and-merge)
