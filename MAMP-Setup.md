@@ -4,7 +4,7 @@
 * [Prerequisites]()
 * [MAMP Configuration and MySQL]()
 * [Folder Junctions]()
-    * [Example](https://bitbucket.org/jxmot/toolbox/MAMP-Setup.md#markdown-header-example)
+    * [Example](https://bitbucket.org/jxmot/toolbox/src/d6d442a56d46494cda0831a82fa97a011b237de0/MAMP-Setup.md#markdown-header-example)
 
 ## Overview
 
