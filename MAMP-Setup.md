@@ -1,5 +1,10 @@
 # MAMP Set Up (*Windows*)
 
+<!-- TOC -->
+- [Example](#example)
+<!-- /TOC -->
+
+
 * [Overview]()
 * [Prerequisites]()
 * [MAMP Configuration and MySQL]()
