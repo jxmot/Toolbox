@@ -1,15 +1,10 @@
 # MAMP Set Up (*Windows*)
 
-<!-- TOC -->
-- [Example](#example)
-<!-- /TOC -->
-
-
 * [Overview]()
 * [Prerequisites]()
 * [MAMP Configuration and MySQL]()
 * [Folder Junctions]()
-    * [Example](#example)
+    * [Example](https://bitbucket.org/jxmot/toolbox/MAMP.md#example)
 
 ## Overview
 
@@ -46,9 +41,7 @@ Neither of those methods are easy to work with. But junctions are a lot easier a
 
 ### Example
 
-Let's say you're working on two separate projects and want to test them locally using MAMP.
-
-They're found in the following paths -
+Let's say you're working on two separate projects and want to test them locally using MAMP. And they're found in the following paths -
 
 **Project A** - C:\Users\a-user\Documents\Projects\some-project 
 
