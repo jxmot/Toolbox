@@ -1,13 +1,5 @@
 # MAMP Set Up (*Windows*)
 
-* [Overview]()
-* [Prerequisites]()
-* [MAMP Configuration and MySQL]()
-* [Folder Junctions]()
-    * [Example](https://bitbucket.org/jxmot/toolbox/src/MAMP.md#example)
-
-## Overview
-
 This file describes how to set up MAMP when MySQL is present and may be running *outside* of MAMP. It also describes the use of folder **"junctions"** when content is located elsewhere during development.
 
 ## Prerequisites
