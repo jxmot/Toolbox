@@ -4,7 +4,7 @@
 * [Prerequisites]()
 * [MAMP Configuration and MySQL]()
 * [Folder Junctions]()
-    * [Example](https://bitbucket.org/jxmot/toolbox/src/d6d442a56d46494cda0831a82fa97a011b237de0/MAMP-Setup.md#markdown-header-example)
+    * [Example](#example)
 
 ## Overview
 
@@ -25,7 +25,7 @@ If you aren't going to use MySQL then you can just install MAMP with it's defaul
 1. Install MAMP
 2. Run MAMP and - 
      * Go to "Preferences"
-     * Go to the "Ports" tab and change the MySQL Port to 3307.  
+     * Go to the "Ports" tab and change the MySQL Port to 3307
      * Save the change
 
 ## Folder Junctions
