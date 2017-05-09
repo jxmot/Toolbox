@@ -216,7 +216,7 @@ This is a much nicer terminal emulator than PuTTY. In addition to the terminal t
 
 If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibility as you would with a VM. But for a lot of applications *less is better*.
 
-For additional information on setting up MAMP please see [Mamp Setup](./MAMP-Setup.md)
+For additional information on setting up MAMP please see [Mamp Setup](./MAMP.md)
 
 ## Database Managers
 
