@@ -4,8 +4,8 @@
 * [Prerequisites](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-prerequisites)
     * [MAMP Configuration and MySQL](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-mamp-configuration-and-mysql)
         * [Additional Configuration Changes](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-additional-configuration-changes)
-* [Folder Junctions](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-folder-junctions)
-    * [Example](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-example)
+* [Folder Junctions](#markdown-header-folder-junctions)
+    * [Example](#markdown-header-example)
 
 # Overview
 
