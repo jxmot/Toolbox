@@ -1,9 +1,9 @@
 # MAMP Set Up (*Windows*)
 
-* [Overview](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-overview)
-* [Prerequisites](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-prerequisites)
-    * [MAMP Configuration and MySQL](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-mamp-configuration-and-mysql)
-        * [Additional Configuration Changes](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-additional-configuration-changes)
+* [Overview](#markdown-header-overview)
+* [Prerequisites](#markdown-header-prerequisites)
+    * [MAMP Configuration and MySQL](#markdown-header-mamp-configuration-and-mysql)
+        * [Additional Configuration Changes](#markdown-header-additional-configuration-changes)
 * [Folder Junctions](#markdown-header-folder-junctions)
     * [Example](#markdown-header-example)
 
