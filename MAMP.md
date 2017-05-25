@@ -1,16 +1,27 @@
 # MAMP Set Up (*Windows*)
 
+* [Overview](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-overview)
+* [Prerequisites](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-prerequisites)
+    * [MAMP Configuration and MySQL](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-mamp-configuration-and-mysql)
+        * [Additional Configuration Changes](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-additional-configuration-changes)
+* [Folder Junctions](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-folder-junctions)
+    * [Example](https://bitbucket.org/jxmot/toolbox/mamp.md#markdown-header-example)
+
+# Overview
+
 This file describes how to set up MAMP when MySQL is present and may be running *outside* of MAMP. It also describes the use of folder **"junctions"** when content is located elsewhere during development.
 
-## Prerequisites
+At the time of this writing the current MAMP (*free*) version is/was **3.3.0**. 
 
-* MAMP is installed - <https://www.mamp.info/en/>
+# Prerequisites
+
+* MAMP is installed (*includes its own MySQL server*) - <https://www.mamp.info/en/>
 * MySQL may, or may not be installed - <https://www.mysql.com/>
-* Windows OS - these instructions are specific to Windows.
+* Windows OS - these instructions are specific to Windows. These instructions will work for 7 Pro, 10 Home & Pro.
 
 ## MAMP Configuration and MySQL
 
-If you have installed MySQL prior to this point, or if you are planning on installing it for use without a HTTP server then either MAMP or MySQL will need to have their listening port changed. The default for an SQL server is 3306. And since I always have the MySQL server running I've changed the MAMP SQL port to 3307.
+If you have installed MySQL prior to this point, or if you are planning on installing it for use without a HTTP server then either MAMP or MySQL will need to have their listening port changed. The default for an SQL server is 3306. And since I always have the not-MAMP MySQL server running I've changed the MAMP SQL port to 3307.
 
 If you aren't going to use MySQL then you can just install MAMP with it's default settings and skip changing the port number.
 
@@ -20,7 +31,21 @@ If you aren't going to use MySQL then you can just install MAMP with it's defaul
      * Go to the "Ports" tab and change the MySQL Port to 3307
      * Save the change
 
-## Folder Junctions
+### Additional Configuration Changes
+
+Even if you had modified the MySQL port as descibed above MAMP *will not* fully recognize that change. If you were to run `phpinfo.php` after modifying the port number it would still report **3306** as it's port number and would connect to any MySQL server listening on that port.
+
+To complete the port number modification you will need to edit `C:\MAMP\conf\`**`phpX.Y.Z`**`\php.ini`, where **`phpX.Y.Z`** corresponds to the version of PHP you've chose during the MAMP set up. Open the file in an editor and search for "`default_port`". There should be two occurances - `mysql.default_port` and `mysqli.default_port`. Modify both to appear as - 
+
+`mysql.default_port = 3307`
+
+*and*
+
+`mysqli.default_port = 3307`
+
+If the MAMP server was running while you were editing then it will require a restart in order for the new settings to take affect. The changed settings can be verified by running `phpinfo.php`.
+
+# Folder Junctions
 
 You might be familiar with a Linux *hard link*. The Window's equivalent is a *junction*. And they are particularly useful when keeping project folders organized in separate and possibly unrelated locations but you want to serve them with MAMP during development. 
 
@@ -31,7 +56,7 @@ Some alternatives to this method are -
 
 Neither of those methods are easy to work with. But junctions are a lot easier and since they look like folders you can have as many (*within the limits of Windows*) you need. 
 
-### Example
+## Example
 
 Let's say you're working on two separate projects and want to test them locally using MAMP. And they're found in the following paths -
 
