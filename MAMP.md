@@ -21,7 +21,7 @@ At the time of this writing the current MAMP (*free*) version is/was **3.3.0**.
 
 ## MAMP Configuration and MySQL
 
-If you have installed MySQL prior to this point, or if you are planning on installing it for use without a HTTP server then either MAMP or MySQL will need to have their listening port changed. The default for an SQL server is 3306. And since I always have the not-MAMP MySQL server running I've changed the MAMP SQL port to 3307.
+If you have installed MySQL prior to this point, or if you are planning on installing it for use without a HTTP server then either MAMP or MySQL will need to have their listening port changed. The default for an SQL server is 3306. And since I always have the stand-alone MySQL server running I've changed the MAMP SQL port to 3307.
 
 If you aren't going to use MySQL then you can just install MAMP with it's default settings and skip changing the port number.
 
