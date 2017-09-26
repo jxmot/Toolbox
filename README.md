@@ -17,7 +17,7 @@ Unless something specific needs to be noted I will not be providing any installa
     * [MySQL](#mysql)
     * [MongoDB](#mongodb)
 * [Editing Tools](#editing-tools)
-* [File Grep and File Search](#file-grep-and-file-search-tools)
+* [File Grep and File Search](#file-grep-and-file-search)
 * [File Difference and Merge](#file-difference-and-merge)
 * [Version Control](#version-control)
 * [IDE Software](#ide-software)
