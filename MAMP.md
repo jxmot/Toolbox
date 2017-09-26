@@ -1,11 +1,11 @@
 # MAMP Set Up (*Windows*)
 
-* [Overview](#markdown-header-overview)
-* [Prerequisites](#markdown-header-prerequisites)
-    * [MAMP Configuration and MySQL](#markdown-header-mamp-configuration-and-mysql)
-        * [Additional Configuration Changes](#markdown-header-additional-configuration-changes)
-* [Folder Junctions](#markdown-header-folder-junctions)
-    * [Example](#markdown-header-example)
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+    * [MAMP Configuration and MySQL](#mamp-configuration-and-mysql)
+        * [Additional Configuration Changes](#additional-configuration-changes)
+* [Folder Junctions](#folder-junctions)
+    * [Example](#example)
 
 # Overview
 
