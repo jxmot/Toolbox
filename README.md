@@ -1,4 +1,4 @@
-# ToolBox - as of May, 2017
+# ToolBox - as of September, 2017
 
 Greetings!
 
@@ -134,7 +134,16 @@ This is one of the few programs that I've paid for. And this one has proven to b
 
 They don't offer a *trial* version but they do provide a web version that you can tinker with. And there are a **lot** of video tutorials, and a users' forum.
 
-But it is not an HTML editor. You create Bootstrap pages by inserting or drag-n-drop *elements* in to the page. I found it to be a better and quicker means to create a layout than using just a text editor (*such as Notepad++*). 
+But it is **not** an HTML editor. You create Bootstrap pages by inserting or drag-n-drop *elements* in to the page. I found it to be a better and quicker means to create a layout than using just a text editor (*such as Notepad++*).
+
+Some aspects of the UI can be a little quirky, as it does not always let you insert tags or blocks where *you* want them. And it will make some assumptions for you. For example, for modularity reasons I like to have my HTML files associated with a single and individually named CSS file rather than pile every page's specific CSS into one huge file. But the program assumes that all HTML files will reference all CSS files. So I don't use this program to create deployment ready content.
+
+There are some really great features - 
+
+* Preview - you can preview the page your working on in *real time*. In other words, as you make changes and save them the preview will update automatically.
+* Export - even though your project is saved in a proprietary format it's easy to export it as HTML, CSS, JS and image files.
+* Add to Library - this makes reuse of blocks really simple. You can export as little, or as as much as you like and it ends up your own library.
+* Element navigation - they've made it very intuitive for navigating through the elements and they provide a really good UI for changing attributes.
 
 # Other Useful Tools
 
@@ -204,6 +213,14 @@ However, running on Windows 10 **Pro 64 bit** the problem appears to have been e
 
 In order for the VM to make the DHCP request a VM network setting must be changed. This can be done prior to installing from the ISO. By default the VM network adapter is set to NAT. Change to "Bridged Adapter" and your VM will be able to obtain its IP address.
 
+**Hyper-V :**
+
+After a recently installing *Microsoft Visual Studio Community* I noticed that their virtual machine software called *Hyper-V* was installed. And afterwards when I ran VirtualBox it failed to start the virtual machine. After some research and reading I determined that Hyper-V was the cause of the problem. Just to be clear the symptoms manifest as the virtual machine window closing abruptly and a dialog contain the message **VT-x is not available (VERR_VMX_NO_VMX)**.
+
+The fix I used was to disable Hyper-V. And the most useful information I found was at [How to Enable and Disable Hyper-V in Windows 10 & 8](http://www.poweronplatforms.com/enable-disable-hyper-v-windows-10-8/).
+
+After Hyper-V was disabled VirtualBox worked without any issues. **Success!**
+
 ## Terminal Emulators
 
 **Bitvise** : <https://www.bitvise.com/>
@@ -217,6 +234,12 @@ This is a much nicer terminal emulator than PuTTY. In addition to the terminal t
 If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibility as you would with a VM. But for a lot of applications *less is better*.
 
 For additional information on setting up MAMP please see [Mamp Setup](./MAMP.md)
+
+**XAMPP** : <https://www.apachefriends.org/index.html>
+
+Recently I was trying to see if I could *debug* my PHP code using *Visual Studio Code*. Along the way I had determined that MAMP was not going to work out. So I tried XAMPP and had *limited* success. However I like the XAMPP UI better than MAMP. It provides an easier access to the configuration files and longs when compared to MAMP. The XAMPP version I'm using comes with PHP Version 5.6.31, which is a very close match to the hosted servers that I deploy to.
+
+Please note that as described in [Mamp Setup](./MAMP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
 
 ## Database Managers
 
