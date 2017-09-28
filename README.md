@@ -215,7 +215,7 @@ In order for the VM to make the DHCP request a VM network setting must be change
 
 **Hyper-V :**
 
-After a recently installing *Microsoft Visual Studio Community* I noticed that their virtual machine software called *Hyper-V* was installed. And afterwards when I ran VirtualBox it failed to start the virtual machine. After some research and reading I determined that Hyper-V was the cause of the problem. Just to be clear the symptoms manifest as the virtual machine window closing abruptly and a dialog contain the message **VT-x is not available (VERR_VMX_NO_VMX)**.
+After recently installing *Microsoft Visual Studio Community* I noticed that their virtual machine software called *Hyper-V* was installed. And afterwards when I ran VirtualBox it failed to start the virtual machine. After some research and reading I determined that Hyper-V was the cause of the problem. Just to be clear the symptoms manifest as the virtual machine window closing abruptly and a dialog contain the message **VT-x is not available (VERR_VMX_NO_VMX)**.
 
 The fix I used was to disable Hyper-V. And the most useful information I found was at [How to Enable and Disable Hyper-V in Windows 10 & 8](http://www.poweronplatforms.com/enable-disable-hyper-v-windows-10-8/).
 
