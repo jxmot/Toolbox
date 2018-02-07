@@ -69,15 +69,15 @@ The following steps will create two project junctions :
 1. Open a command-line window and go to `C:\MAMP\htdocs`
 2. Run the following commands - 
 
-    `mklink /j c:\mamp\htdocs\`**`projecta`** ` C:\Users\a-user\Documents\Projects\some-project`
+    `mklink /j c:\mamp\htdocs\projecta C:\Users\a-user\Documents\Projects\some-project`
 
-    `mklink /j c:\mamp\htdocs\`**`projectb`** ` D:\projects\web\customer-X\new-site`
+    `mklink /j c:\mamp\htdocs\projectb D:\projects\web\customer-X\new-site`
 
 3. Then in your browser go to - 
 
-    `http://localhost/`**`projecta`**`/index.html`
+    `http://localhost/projecta/index.html`
 
-    `http://localhost/`**`projectb`**`/index.html`
+    `http://localhost/projectb/index.html`
 
 
 
