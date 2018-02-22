@@ -1,4 +1,4 @@
-# ToolBox - as of September, 2017
+# ToolBox - as of February, 2018
 
 Greetings!
 
@@ -21,6 +21,7 @@ Unless something specific needs to be noted I will not be providing any installa
 * [File Difference and Merge](#file-difference-and-merge)
 * [Version Control](#version-control)
 * [IDE Software](#ide-software)
+* [Online Tools](#online-tools)
 * [Other Useful Tools](#other-useful-tools)
     * [API Tester](#api-tester)
     * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
@@ -116,10 +117,6 @@ This is my favorite Git UI tool. It works perfectly for Github and Bitbucket. It
 
 # IDE Software
 
-**Netbeans 8.x** : <https://netbeans.org/features/index.html>
-
-A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. I use it with *Chrome*, which requires a plugin to be installed.
-
 **Visual Studio Code** : <https://code.visualstudio.com/>
 
 I've recently started using *Visual Studio Code* and so far I **really** like it. And compared to *Netbeans* it certainly has some advantages. Here's the ones I've found so far - 
@@ -144,6 +141,48 @@ There are some really great features -
 * Export - even though your project is saved in a proprietary format it's easy to export it as HTML, CSS, JS and image files.
 * Add to Library - this makes reuse of blocks really simple. You can export as little, or as as much as you like and it ends up your own library.
 * Element navigation - they've made it very intuitive for navigating through the elements and they provide a really good UI for changing attributes.
+
+**Netbeans 8.x** : <https://netbeans.org/features/index.html>
+
+A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. I use it with *Chrome*, which requires a plugin to be installed.
+
+# Online Tools
+
+**EpochConverter** : <https://www.epochconverter.com/>
+
+Very useful for converting epoch values (*like* `1519280283`) to human readable date & time strings, and from strings to epoch values. There are also code samples in C, MySQL, PERL, PHP, VBScript/ASP, and Javascript. 
+
+**PhpFiddle** : <http://phpfiddle.org/>
+
+This tool has worked very well for me. I've used it to debug some PHP classes that access web APIs. It's free and relatively easy to use.
+
+**Is It Down Right Now ?** : <http://www.isitdownrightnow.com/>
+
+Useful when you're trying to visit a site and nothing happens. This tool is a good "sanity check" for when that occurs.
+
+**Create your Google Sitemap Online - XML Sitemaps Generator** : <https://www.xml-sitemaps.com/>
+
+If you're working with Google and SEO this site will crawl your site and automatically generate a sitemap for you. It's a free service for small web sites (*less than 500 pages*).
+
+**Can I use** : <https://caniuse.com/>
+
+Very handy for checking if a browser supports a feature. 
+
+**Professional lorem ipsum generator for typographers** : <http://generator.lorem-ipsum.info/>
+
+A useful tool that generates *Lorem Ipsum* text for use as temporary filler on a web page.
+
+**HSL Color Picker** : <http://hslpicker.com>
+
+A very nice color picker, provides 3 types of color representations.
+
+**Bootstrap Live Customizer** : <https://www.bootstrap-live-customizer.com/>
+
+Allows you to load a Bootstrap theme and then customize it. Very handy when you want to make adjustments to the CSS that's been provided in a theme. Since it is a *live* adjustment it's great for visualizing changes before committing them to your site.
+
+**html shell** : <http://htmlshell.com/>
+
+Let's you create an HTML page boilerplate, there are a number of options that you can enable or disable.
 
 # Other Useful Tools
 
