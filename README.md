@@ -1,4 +1,4 @@
-# ToolBox - as of February, 2018
+# ToolBox - as of November, 2020
 
 Greetings!
 
@@ -53,9 +53,19 @@ Windows Details :
     * Professional
     * 64 bit
 
-## Node
+## Node.js
 
-Another piece of my development platform is *NodeJS*. I'm currently using **v6.10.2 LTS**. I've found that *Node* can be quite useful for developing code *prior* to integration into a *browser* project.
+Another piece of my development platform is *NodeJS*. I'm currently have these versions available to me:
+
+* 12.18.4
+* 12.16.1
+* 10.22.0
+* 10.13.0
+* 8.17.0
+* 8.9.0
+* 6.10.2
+
+I've found that *Node* can be quite useful for developing code *prior* to integration into a *browser* project.
 
 ## MySQL
 
@@ -115,6 +125,8 @@ This application will allow you to edit or copy changes from one file to another
 
 This is my favorite Git UI tool. It works perfectly for Github and Bitbucket. It's free for non-commercial use. And it also runs on Mac and Linux.
 
+I recommend this over any other Git GUI tool.
+
 # IDE Software
 
 **Visual Studio Code** : <https://code.visualstudio.com/>
@@ -145,6 +157,8 @@ There are some really great features -
 **Netbeans 8.x** : <https://netbeans.org/features/index.html>
 
 A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. I use it with *Chrome*, which requires a plugin to be installed.
+
+Depending on how you have set up PHP you may need to edit the php.ihi file to enable the debug library.
 
 # Online Tools
 
