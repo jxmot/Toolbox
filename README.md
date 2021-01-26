@@ -200,6 +200,12 @@ Let's you create an HTML page boilerplate, there are a number of options that yo
 
 # Other Useful Tools
 
+## File Tail
+
+**mTAIL**: <http://www.mtail.com/>
+
+If you are familiar with the Linux command `tail -f`, then you will miss having it on Windows. Most of the applications I write generate a *log file* during run-time. And log files are very useful when tracking down bugs. But it can be helpful to watch the file in *real time* and this tool will make it possible
+
 ## API Testers
 
 **Postman** : <https://www.getpostman.com/>
