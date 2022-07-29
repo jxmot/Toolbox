@@ -1,4 +1,4 @@
-# ToolBox - as of January, 2021
+# ToolBox - as of August, 2022
 
 Greetings!
 
@@ -13,7 +13,7 @@ Unless something specific needs to be noted I will not be providing any installa
 # Table of Contents
 
 * [My Development Platform](#my-development-platform)
-    * [Node](#node)
+    * [Node](#nodejs)
     * [MySQL](#mysql)
     * [MongoDB](#mongodb)
 * [Editing Tools](#editing-tools)
@@ -49,36 +49,44 @@ Windows Details :
 * Windows 10
     * Home and Pro Editions
     * 64 bit
-* Windows 7
+* Windows 7 (for browser testing)
     * Professional
     * 64 bit
 
-## Node.js
+## NodeJS
 
 Another piece of my development platform is *NodeJS*. I'm currently have these versions available to me:
 
-* 12.18.4
+* 14.20.0
+* 12.22.12
 * 12.16.1
-* 10.22.0
-* 10.13.0
+* 10.24.1
 * 8.17.0
-* 8.9.0
 * 6.10.2
 
 I've found that *Node* can be quite useful for developing code *prior* to integration into a *browser* project.
 
+### Useful NodeJS Utilities
+
+**nvm**: This is a *version manager* for NodeJS. It allows for easy switching between NodeJS versions. It can be found at [NVM For Windows](https://github.com/coreybutler/nvm-windows).
+
 ## MySQL
 
-The version I'm using is **5.7**. SQL has been around for quite a long time. It has clear advantages in regards to it wide spread use. And technically speaking MySQL is robust *and* secure. Many businesses use it, and it can be found in most hosting service packages. Mainstream web applications like *Wordpress* use it, and most e-commerce packages also make use of it.
+The version I'm using is the *Community* version **5.7.38**. I have chosen that version because it matches my the version of MySQL on my webservers. The **msi** installer (32bit only) is named `mysql-installer-community-5.7.38.0.msi` and can be found [here](https://downloads.mysql.com/archives/installer/).
+
+SQL has been around for quite a long time. It has clear advantages in regards to it wide spread use. And technically speaking MySQL is robust *and* secure. Many businesses use it, and it can be found in most hosting service packages. Mainstream web applications like *Wordpress* use it, and most e-commerce packages also make use of it.
 
 ## MongoDB
+
+**NOTE:** Unfortunately MongoDB **no longer** provides a database instance that you can use **FOR FREE**. Instead the push you onto a *paid* instance. This has made MongoDB less that desirable because it takes a special effort to install it on a webserver.
 
 I like this database for a few reasons - 
 
 * Data is stored in JSON / BSON (<https://www.mongodb.com/json-and-bson>)
-* If your hosting service doesn't provide it you can sign up for an mLab account (<https://mlab.com/>) and have your data stored on their servers. The free account has enough capacity for most applications.
 * When paired with Mongoose (<http://mongoosejs.com/>) and the Bluebird promise API MongoDB becomes a very reasonable alternative to SQL databases.
 * In my opinion it's much easier to implement than MySQL.
+
+I installed *MongoDB Community Server* version **5.09**. It can be found [here](https://www.mongodb.com/try/download/community?tck=docs_server).
 
 # Editing Tools
 
@@ -93,15 +101,10 @@ This is my **primary** editor, and I've been using it for quite a number of year
 * **Notes for Windows Users:** 
     * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator* when changing the options.
 
-**Markdown Edit** : <http://markdownedit.com/>
 
-A handy program to have for editing *markdown* files. I've tried a number of them and this one works best for **Git** style markdown files. I also use it for *Bitbucket* markdown, but should be noted that Git and Bitbucket are slightly different in regards to the markdown that's recognized. This editor has the following features that I find to be useful - 
+**Markdown Editing** : Good luck! The editor I used to use *a lot* is now no longer under active development. I have researched other Markdown editors and have found most to be lacking in features, or no longer active. 
 
-* Side-by-side editing and WYSIWYG - the left side of the program's window is where you do your editing. It *highlights* markdown elements for you and has some "smarts" in regards to bulleted lists as it will create a new bullet on the next line when you hit `Enter` and the new line will be *at the same level* as the previous line.
-* Re-opens last file automatically when started.
-* Installation associates it with `*.md` files.
-
-*I used it to create and edit this file.*
+If I ever find one that can be installed in Windows and is *actually usable* I will update this document.
 
 # File Grep and File Search
 
@@ -194,9 +197,9 @@ A very nice color picker, provides 3 types of color representations.
 
 Allows you to load a Bootstrap theme and then customize it. Very handy when you want to make adjustments to the CSS that's been provided in a theme. Since it is a *live* adjustment it's great for visualizing changes before committing them to your site.
 
-**html shell** : <http://htmlshell.com/>
+**html shell** : https://www.toptal.com/developers/htmlshell
 
-Let's you create an HTML page boilerplate, there are a number of options that you can enable or disable.
+Let's you create an HTML page boilerplate, there are a number of options that you can enable or disable. **NOTE**: The original www.htmlshell.com site has been taken over by TopTal. 
 
 # Other Useful Tools
 
@@ -317,20 +320,6 @@ It can connect to the *local* MySQL installation, and connect to remote ones. Su
 ### Robomongo
 
 This app has a similar look and feel to *MySQL Workbench* and pretty much does the same type things as MySQL Workbench. 
-
-# Tools That I Do Not Use
-
-These are developer tools that I've tried for a while and subsequently decided that they were not going to work out for *me*. 
-
-*Your mileage may vary....*
-
-## Sublime Editor
-
-I first heard about this editor in a class I had taken. It was a good choice for anyone who is *new* to the world of software development and it's available for the mac as well as the PC. However by comparison to *Notepad++* it is missing a number of the key features that I use regularly. 
-
-## Eclipse
-
-I'm not a fan of Eclipse. I've tried to use it, and tried. But I find it to be cumbersome in regards to it's installation and use. 
 
 ---
 <img src="http://webexperiment.info/extcounter/mdcount.php?id=toolbox">
