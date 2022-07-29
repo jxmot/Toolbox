@@ -23,6 +23,8 @@ Unless something specific needs to be noted I will not be providing any installa
 * [IDE Software](#ide-software)
 * [Online Tools](#online-tools)
 * [Other Useful Tools](#other-useful-tools)
+    * [CSS and JS Tools](#css-and-js-tools)
+    * [Miscellaneous Tools](#miscellaneous-tools)
     * [API Tester](#api-tester)
     * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
     * [Image Editors](#image-editors)
@@ -202,7 +204,7 @@ Let's you create an HTML page boilerplate, there are a number of options that yo
 
 # Other Useful Tools
 
-## CSS/JS Tools
+## CSS and JS Tools
 
 **[Autoprefixer](https://github.com/postcss/autoprefixer)** - A utility to add or remove browser prefixes on CSS statements.
 
