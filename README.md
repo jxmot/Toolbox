@@ -101,8 +101,7 @@ This is my **primary** editor, and I've been using it for quite a number of year
 * **Notes for Windows Users:** 
     * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator* when changing the options.
 
-
-**Markdown Editing** : Good luck! The editor I used to use *a lot* is now no longer under active development. I have researched other Markdown editors and have found most to be lacking in features, or no longer active. 
+**Markdown Editing** : Good luck! The editor I used to use *a lot* is no longer under active development. I have researched other Markdown editors and have found most to be lacking in features, or no longer active. 
 
 If I ever find one that can be installed in Windows and is *actually usable* I will update this document.
 
@@ -203,6 +202,24 @@ Let's you create an HTML page boilerplate, there are a number of options that yo
 
 # Other Useful Tools
 
+## CSS/JS Tools
+
+**[Autoprefixer](https://github.com/postcss/autoprefixer)** - A utility to add or remove browser prefixes on CSS statements.
+
+**[minimize-prep](https://github.com/jxmot/minimize-prep)** - A PHP script that reads an HTML file, finds all &lt;link&gt; and &lt;script&gt; tags. The local files that are referenced in those tags are concatenated into single CSS and JS files. 
+
+**[cssjs-minify](https://github.com/jxmot/cssjs-minify)** - CSS and JS Minifiier written in PHP. Can work in conjuction with **minimize-prep**.
+
+**[htaccess-minifier](https://github.com/jxmot/htaccess-minifier)** - A PHP script that reads an htaccess file, and writes minified lines to an output file. 
+
+## Miscellaneous Tools
+
+**[apache-log_filter](https://github.com/jxmot/apache-log_filter)** - A PHP script that filters known IP addresses from an Apache HTTP log file.
+
+**[zipremote](https://github.com/jxmot/zipremote)** - This repository contains a utility that will zip files within a folder, or folder contents recursively on a remote web server and then download them to the client. The utility also has the ability to upload a zip file and optionally extract all or part of its contents. 
+
+**[bash-random_folder_tree](https://github.com/jxmot/bash-random_folder_tree)** - A bash script that will create a folder tree with files in it. These folders are named with random letters using `mktemp`. And the files within them are named randomly,vary in size randomly within a range, have random extensions taken from a list. **This utility is used for testing **zipremote**.
+
 ## File Tail
 
 **mTAIL**: <http://www.mtail.com/>
@@ -291,17 +308,25 @@ This is a much nicer terminal emulator than PuTTY. In addition to the terminal t
 
 ## HTTP Servers
 
+**XAMPP** : <https://www.apachefriends.org/index.html>
+
+This is my **preferred** utility for running a local web server on my PC.
+
+Recently I was trying to see if I could *debug* my PHP code using *Visual Studio Code*. Along the way I had determined that MAMP was not going to work out. So I tried XAMPP and had *limited* success. 
+
+However I like the XAMPP UI better than MAMP. It provides an easier access to the configuration files and longs when compared to MAMP. The XAMPP version I'm using comes with PHP Version 7.3.29, which is a very close match to the hosted servers that I deploy to.
+
+Please note that as described in [Mamp Setup](./MAMP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
+
+**NOTES**: 
+1) If you have already installed, or will install *MySQL* then you do not need to install MySQL with XAMPP. 
+2) It is possible to install more than one version of PHP *after* XAMPP is installed. Use [XAMPP PHP Switcher](https://github.com/JackieDo/Xampp-PHP-Switcher) to switch between PHP versions under XAMPP.
+
 **MAMP** (**not** Pro) : <https://www.mamp.info/en/>
 
 If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibility as you would with a VM. But for a lot of applications *less is better*.
 
 For additional information on setting up MAMP please see [Mamp Setup](./MAMP.md)
-
-**XAMPP** : <https://www.apachefriends.org/index.html>
-
-Recently I was trying to see if I could *debug* my PHP code using *Visual Studio Code*. Along the way I had determined that MAMP was not going to work out. So I tried XAMPP and had *limited* success. However I like the XAMPP UI better than MAMP. It provides an easier access to the configuration files and longs when compared to MAMP. The XAMPP version I'm using comes with PHP Version 5.6.31, which is a very close match to the hosted servers that I deploy to.
-
-Please note that as described in [Mamp Setup](./MAMP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
 
 ## Database Managers
 
