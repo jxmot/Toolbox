@@ -158,11 +158,9 @@ There are some really great features -
 * Add to Library - this makes reuse of blocks really simple. You can export as little, or as as much as you like and it ends up your own library.
 * Element navigation - they've made it very intuitive for navigating through the elements and they provide a really good UI for changing attributes.
 
-**Netbeans 8.x** : <https://netbeans.org/features/index.html>
+**Netbeans** : <https://netbeans.apache.org/>
 
-A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. I use it with *Chrome*, which requires a plugin to be installed.
-
-Depending on how you have set up PHP you may need to edit the php.ihi file to enable the debug library.
+A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. An excellent place to start is with the [PHP and HTML5 Learning Trail](https://netbeans.apache.org/kb/docs/php/index.html)
 
 # Online Tools
 
@@ -310,6 +308,8 @@ This is a much nicer terminal emulator than PuTTY. In addition to the terminal t
 
 ## HTTP Servers
 
+If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibility as you would with a VM. But for a lot of applications *less is better*.
+
 **XAMPP** : <https://www.apachefriends.org/index.html>
 
 This is my **preferred** utility for running a local web server on my PC.
@@ -323,10 +323,9 @@ Please note that as described in [XAMPP Setup](./XAMPP.md) I'm using *folder jun
 **NOTES**: 
 1) If you have already installed, or will install *MySQL* then you do not need to install MySQL with XAMPP. 
 2) It is possible to install more than one version of PHP *after* XAMPP is installed. Use [XAMPP PHP Switcher](https://github.com/JackieDo/Xampp-PHP-Switcher) to switch between PHP versions under XAMPP.
+3) Under Windows 10 Pro (21H2) it is necessary to run XAMPP as *administrator*. 
 
 **MAMP** (**not** Pro) : <https://www.mamp.info/en/>
-
-If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibility as you would with a VM. But for a lot of applications *less is better*.
 
 For additional information on setting up MAMP please see [Mamp Setup](./MAMP.md)
 
