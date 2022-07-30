@@ -17,7 +17,6 @@ This document describes how to set up XAMPP when MySQL is present and may be run
 * MySQL (*Community Edition*) may, or may not be installed - <https://www.mysql.com/>. However, the benefits to installing MySQL independently are:
   * It's bundled with Workbench which is extremely useful for managing databases 
   * You can work on databases without running XAMPP
-  * 
 * Windows OS - these instructions are specific to Windows 10 Home or Pro.
 
 **NOTE**: At the time when this document was created (2022-07-29) and When XAMPP installed on Windows 10 (21H2) it may be necessary to run it as *administrator*.
@@ -35,7 +34,9 @@ Some alternatives to this method are -
 * Change XAMPP's document root path to the project's path, works for only one project at a time.
 * Copy the project files into the document root after one or more edits. 
 
-Neither of those methods are easy to work with. But junctions are a lot easier and since they look like folders you can have as many (*within the limits of Windows*) as you need. 
+Neither of those methods are easy to work with. But junctions are a lot easier and since they look like folders you can have as many (*within the limits of Windows*) as you need.
+
+**NOTE**: When editing project files make sure you are editing them from within their actual project folder, and **not** via the junction you created.
 
 ## Example
 
@@ -54,12 +55,11 @@ The following steps will create two project junctions :
 
     `mklink /j c:\XAMPP\htdocs\projectb D:\projects\web\customer-X\new-site`
 
-3. While XAMPP is running and Apache has been started use your browser and go to - 
+3. While XAMPP is running and Apache has been started use your browser and go to (*replace* `localhost` *with your PC's IP address*) - 
 
     `http://localhost/projecta/`
 
     `http://localhost/projectb/`
-
 
 NOTE: The "junctions" are permanent until deleted from the `c:\XAMPP\htdocs` folder. You **must** use rmdir to remove the junction.
 
