@@ -1,4 +1,4 @@
-# ToolBox - as of January, 2021
+# ToolBox - as of August, 2022
 
 Greetings!
 
@@ -13,7 +13,7 @@ Unless something specific needs to be noted I will not be providing any installa
 # Table of Contents
 
 * [My Development Platform](#my-development-platform)
-    * [Node](#node)
+    * [Node](#nodejs)
     * [MySQL](#mysql)
     * [MongoDB](#mongodb)
 * [Editing Tools](#editing-tools)
@@ -23,6 +23,8 @@ Unless something specific needs to be noted I will not be providing any installa
 * [IDE Software](#ide-software)
 * [Online Tools](#online-tools)
 * [Other Useful Tools](#other-useful-tools)
+    * [CSS and JS Tools](#css-and-js-tools)
+    * [Miscellaneous Tools](#miscellaneous-tools)
     * [API Tester](#api-tester)
     * [Wire Frame and Diagram Editors](#wire-frame-and-diagram-editors)
     * [Image Editors](#image-editors)
@@ -49,36 +51,44 @@ Windows Details :
 * Windows 10
     * Home and Pro Editions
     * 64 bit
-* Windows 7
+* Windows 7 (for browser testing)
     * Professional
     * 64 bit
 
-## Node.js
+## NodeJS
 
 Another piece of my development platform is *NodeJS*. I'm currently have these versions available to me:
 
-* 12.18.4
+* 14.20.0
+* 12.22.12
 * 12.16.1
-* 10.22.0
-* 10.13.0
+* 10.24.1
 * 8.17.0
-* 8.9.0
 * 6.10.2
 
 I've found that *Node* can be quite useful for developing code *prior* to integration into a *browser* project.
 
+### Useful NodeJS Utilities
+
+**nvm**: This is a *version manager* for NodeJS. It allows for easy switching between NodeJS versions. It can be found at [NVM For Windows](https://github.com/coreybutler/nvm-windows).
+
 ## MySQL
 
-The version I'm using is **5.7**. SQL has been around for quite a long time. It has clear advantages in regards to it wide spread use. And technically speaking MySQL is robust *and* secure. Many businesses use it, and it can be found in most hosting service packages. Mainstream web applications like *Wordpress* use it, and most e-commerce packages also make use of it.
+The version I'm using is the *Community* version **5.7.38**. I have chosen that version because it matches my the version of MySQL on my webservers. The **msi** installer (32bit only) is named `mysql-installer-community-5.7.38.0.msi` and can be found [here](https://downloads.mysql.com/archives/installer/).
+
+SQL has been around for quite a long time. It has clear advantages in regards to it wide spread use. And technically speaking MySQL is robust *and* secure. Many businesses use it, and it can be found in most hosting service packages. Mainstream web applications like *Wordpress* use it, and most e-commerce packages also make use of it.
 
 ## MongoDB
+
+**NOTE:** Unfortunately MongoDB **no longer** provides a database instance that you can use **FOR FREE**. Instead the push you onto a *paid* instance. This has made MongoDB less that desirable because it takes a special effort to install it on a webserver.
 
 I like this database for a few reasons - 
 
 * Data is stored in JSON / BSON (<https://www.mongodb.com/json-and-bson>)
-* If your hosting service doesn't provide it you can sign up for an mLab account (<https://mlab.com/>) and have your data stored on their servers. The free account has enough capacity for most applications.
 * When paired with Mongoose (<http://mongoosejs.com/>) and the Bluebird promise API MongoDB becomes a very reasonable alternative to SQL databases.
 * In my opinion it's much easier to implement than MySQL.
+
+I installed *MongoDB Community Server* version **5.09**. It can be found [here](https://www.mongodb.com/try/download/community?tck=docs_server).
 
 # Editing Tools
 
@@ -93,15 +103,9 @@ This is my **primary** editor, and I've been using it for quite a number of year
 * **Notes for Windows Users:** 
     * Changing editor settings - This can be a problem. At least it is in v7.2.2. You might discover that your changed settings aren't *permanent*. This is because you need to run the editor as an *administrator* when changing the options.
 
-**Markdown Edit** : <http://markdownedit.com/>
+**Markdown Editing** : Good luck! The editor I used to use *a lot* is no longer under active development. I have researched other Markdown editors and have found most to be lacking in features, or no longer active. 
 
-A handy program to have for editing *markdown* files. I've tried a number of them and this one works best for **Git** style markdown files. I also use it for *Bitbucket* markdown, but should be noted that Git and Bitbucket are slightly different in regards to the markdown that's recognized. This editor has the following features that I find to be useful - 
-
-* Side-by-side editing and WYSIWYG - the left side of the program's window is where you do your editing. It *highlights* markdown elements for you and has some "smarts" in regards to bulleted lists as it will create a new bullet on the next line when you hit `Enter` and the new line will be *at the same level* as the previous line.
-* Re-opens last file automatically when started.
-* Installation associates it with `*.md` files.
-
-*I used it to create and edit this file.*
+If I ever find one that can be installed in Windows and is *actually usable* I will update this document.
 
 # File Grep and File Search
 
@@ -154,11 +158,9 @@ There are some really great features -
 * Add to Library - this makes reuse of blocks really simple. You can export as little, or as as much as you like and it ends up your own library.
 * Element navigation - they've made it very intuitive for navigating through the elements and they provide a really good UI for changing attributes.
 
-**Netbeans 8.x** : <https://netbeans.org/features/index.html>
+**Netbeans** : <https://netbeans.apache.org/>
 
-A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. I use it with *Chrome*, which requires a plugin to be installed.
-
-Depending on how you have set up PHP you may need to edit the php.ihi file to enable the debug library.
+A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. An excellent place to start is with the [PHP and HTML5 Learning Trail](https://netbeans.apache.org/kb/docs/php/index.html)
 
 # Online Tools
 
@@ -194,11 +196,29 @@ A very nice color picker, provides 3 types of color representations.
 
 Allows you to load a Bootstrap theme and then customize it. Very handy when you want to make adjustments to the CSS that's been provided in a theme. Since it is a *live* adjustment it's great for visualizing changes before committing them to your site.
 
-**html shell** : <http://htmlshell.com/>
+**html shell** : https://www.toptal.com/developers/htmlshell
 
-Let's you create an HTML page boilerplate, there are a number of options that you can enable or disable.
+Let's you create an HTML page boilerplate, there are a number of options that you can enable or disable. **NOTE**: The original www.htmlshell.com site has been taken over by TopTal. 
 
 # Other Useful Tools
+
+## CSS and JS Tools
+
+**[Autoprefixer](https://github.com/postcss/autoprefixer)** - A utility to add or remove browser prefixes on CSS statements.
+
+**[minimize-prep](https://github.com/jxmot/minimize-prep)** - A PHP script that reads an HTML file, finds all &lt;link&gt; and &lt;script&gt; tags. The local files that are referenced in those tags are concatenated into single CSS and JS files. 
+
+**[cssjs-minify](https://github.com/jxmot/cssjs-minify)** - CSS and JS Minifiier written in PHP. Can work in conjuction with **minimize-prep**.
+
+**[htaccess-minifier](https://github.com/jxmot/htaccess-minifier)** - A PHP script that reads an htaccess file, and writes minified lines to an output file. 
+
+## Miscellaneous Tools
+
+**[apache-log_filter](https://github.com/jxmot/apache-log_filter)** - A PHP script that filters known IP addresses from an Apache HTTP log file.
+
+**[zipremote](https://github.com/jxmot/zipremote)** - This repository contains a utility that will zip files within a folder, or folder contents recursively on a remote web server and then download them to the client. The utility also has the ability to upload a zip file and optionally extract all or part of its contents. 
+
+**[bash-random_folder_tree](https://github.com/jxmot/bash-random_folder_tree)** - A bash script that will create a folder tree with files in it. These folders are named with random letters using `mktemp`. And the files within them are named randomly,vary in size randomly within a range, have random extensions taken from a list. **This utility is used for testing **zipremote**.
 
 ## File Tail
 
@@ -288,17 +308,26 @@ This is a much nicer terminal emulator than PuTTY. In addition to the terminal t
 
 ## HTTP Servers
 
-**MAMP** (**not** Pro) : <https://www.mamp.info/en/>
-
 If a VM isn't what you want to use, but if instead you need something that's relatively light weight then a local server might be a better choice. You won't have complete control or flexibility as you would with a VM. But for a lot of applications *less is better*.
-
-For additional information on setting up MAMP please see [Mamp Setup](./MAMP.md)
 
 **XAMPP** : <https://www.apachefriends.org/index.html>
 
-Recently I was trying to see if I could *debug* my PHP code using *Visual Studio Code*. Along the way I had determined that MAMP was not going to work out. So I tried XAMPP and had *limited* success. However I like the XAMPP UI better than MAMP. It provides an easier access to the configuration files and longs when compared to MAMP. The XAMPP version I'm using comes with PHP Version 5.6.31, which is a very close match to the hosted servers that I deploy to.
+This is my **preferred** utility for running a local web server on my PC.
 
-Please note that as described in [Mamp Setup](./MAMP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
+Recently I was trying to see if I could *debug* my PHP code using *Visual Studio Code*. Along the way I had determined that MAMP was not going to work out. So I tried XAMPP and had *limited* success. 
+
+However I like the XAMPP UI better than MAMP. It provides an easier access to the configuration files and longs when compared to MAMP. The XAMPP version I'm using comes with PHP Version 7.3.29, which is a very close match to the hosted servers that I deploy to.
+
+Please note that as described in [XAMPP Setup](./XAMPP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
+
+**NOTES**: 
+1) If you have already installed, or will install *MySQL* then you do not need to install MySQL with XAMPP. 
+2) It is possible to install more than one version of PHP *after* XAMPP is installed. Use [XAMPP PHP Switcher](https://github.com/JackieDo/Xampp-PHP-Switcher) to switch between PHP versions under XAMPP.
+3) Under Windows 10 Pro (21H2) it is necessary to run XAMPP as *administrator*. 
+
+**MAMP** (**not** Pro) : <https://www.mamp.info/en/>
+
+For additional information on setting up MAMP please see [Mamp Setup](./MAMP.md)
 
 ## Database Managers
 
@@ -317,20 +346,6 @@ It can connect to the *local* MySQL installation, and connect to remote ones. Su
 ### Robomongo
 
 This app has a similar look and feel to *MySQL Workbench* and pretty much does the same type things as MySQL Workbench. 
-
-# Tools That I Do Not Use
-
-These are developer tools that I've tried for a while and subsequently decided that they were not going to work out for *me*. 
-
-*Your mileage may vary....*
-
-## Sublime Editor
-
-I first heard about this editor in a class I had taken. It was a good choice for anyone who is *new* to the world of software development and it's available for the mac as well as the PC. However by comparison to *Notepad++* it is missing a number of the key features that I use regularly. 
-
-## Eclipse
-
-I'm not a fan of Eclipse. I've tried to use it, and tried. But I find it to be cumbersome in regards to it's installation and use. 
 
 ---
 <img src="http://webexperiment.info/extcounter/mdcount.php?id=toolbox">
