@@ -318,7 +318,7 @@ Recently I was trying to see if I could *debug* my PHP code using *Visual Studio
 
 However I like the XAMPP UI better than MAMP. It provides an easier access to the configuration files and longs when compared to MAMP. The XAMPP version I'm using comes with PHP Version 7.3.29, which is a very close match to the hosted servers that I deploy to.
 
-Please note that as described in [Mamp Setup](./MAMP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
+Please note that as described in [XAMPP Setup](./XAMPP.md) I'm using *folder junctions*. You can find the details under the **Folder Junctions** section in that file.
 
 **NOTES**: 
 1) If you have already installed, or will install *MySQL* then you do not need to install MySQL with XAMPP. 
