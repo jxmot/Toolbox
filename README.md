@@ -160,7 +160,9 @@ There are some really great features -
 
 **Netbeans** : <https://netbeans.apache.org/>
 
-A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. An excellent place to start is with the [PHP and HTML5 Learning Trail](https://netbeans.apache.org/kb/docs/php/index.html)
+A very full featured IDE that allows you to edit, debug, and manage (*i.e. Git*) HTML5/JavaScript, Node, and PHP applications. An excellent place to start is with the [PHP and HTML5 Learning Trail](https://netbeans.apache.org/kb/docs/php/index.html).
+
+**NOTE**: The best way to install Netbeans is to use the *Comunity Installer*. It will include the JDK that is required by Netbeans. It can be found [here](https://www.codelerity.com/netbeans/)
 
 # Online Tools
 
